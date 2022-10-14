@@ -1,0 +1,21 @@
+:root {
+    --bg-colour: #000249;
+    --primary-colour: #FAF9F0;
+    --active-colour: #F6490D;
+    --btn-colour: #1DCED8;
+    --main-border-radius: .3rem;
+    --rounded-border-radius: .5rem;
+    --title-font: 700 1.5rem/1 'Fira Code','Courier New', Courier, monospace;
+    --info-title-font: 700 1.5rem/1 'Fira Code','Courier New', Courier, monospace;
+    --info-description-font: 400 .8rem/1.1 'Fira Code','Courier New', Courier, monospace;
+    --font-monospace:'Fira Code','Courier New', Courier, monospace;
+    --font-sans-serif: 'Montserrat', Arial,  sans-serif;
+    --font-large: 2.1rem;
+    --font-medium: 1.5rem;
+    --font-small:.8rem;
+    /* --font-xsmall:; */
+    
+
+}
+
+/*font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit;*/

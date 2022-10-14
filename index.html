@@ -5,45 +5,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/index.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navigation">
-            <ul class="navigation__list list">
-                <li class="navigation__list-item list-item">
-                    <a href="" class="list-item__link">Home</a>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="navigation">
+                <ul class="navigation__list list">
+                    <li class="navigation__list-item list-item">
+                        <a href="/" class="list-item__link">#Home</a>
+                    </li>
+                    <li class="navigation__list-item list-item">
+                        <a href="/src/html/contact.html" class="list-item__link">#Projects</a>
+                    </li>
+                    <li class="navigation__list-item list-item">
+                        <a href="/src/html/about.html" class="list-item__link">#About</a>
+                    </li>
+                    <li class="navigation__list-item list-item">
+                        <a href="/src/html/contact.html" class="list-item__link">#Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main" class="main">
+            <p class="main__subtitle">Hey There,</p>
+            <h1 class="main__title">I'm Kateryna</h1>
+            <p class="main__subtitle">Frontend developer based in Europe</p>
+            <ul class="main__list list">
+                <li class="main__list-item list-item">
+                    <a href="#" class="list-item__link">
+                        <img class="list-item__icon" src="./src/assets/icons/github-icon.svg" alt="#">
+                    </a>
+                </li>
+                <li class="main__list-item list-item">
+                    <a href="#" class="list-item__link">
+                        <img class="list-item__icon" src="./src/assets/icons/linkedin-icon.svg" alt="#">
+                    </a>
                 </li>
             </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <h2 class="main__subtitle">Hey There,</h2>
-        <h1 class="main__title">I'm Kateryna</h1>
-        <p class="main__description">Frontend developer, based in Europe</p>
-        <ul class="main__list list">
-            <li class="main__list-item list-item">
-                <a href="" class="list-item__link">link 1</a>
-            </li>
-        </ul>
-    </main>
-    <section class="projects">
-        <div class="project__container">
-            <aside class="project__info"></aside>
-            <div class="project__preview">
-                <img src="#" alt="#" class="preview__image">
+            <div class="main__buttons" style="display: none;">
+                <a href="" class="list-item__link" download="">CV</a>
+                <a href="" class="list-item__link">Contact</a>
             </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <p class="footer__text">
-            Coded with
-            <span>❤️</span>
-            2022
-        </p>
-    </footer>
-
+        </main>
+        <main id="projects" class="projects" hidden>
+            <h2 class="projects__title title">#Projects</h2>
+            <div class="project__content">
+                <article class="project__info">
+                    <h3 class="project__info-title">Lorem ipsum dolor sit amet.</h3>
+                    <p class="project__info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aperiam
+                        animi quod assumenda error vitae
+                        praesentium magnam similique et hic adipisci!</p>
+                    <div class="project__info-technologies">
+                        <ul class="project__list">
+                            <li class="project__list-item">
+                                <img class="list-item__icon" src="./src/assets/icons/html-icon.svg" alt="#">
+                            </li>
+                            <li class="project__list-item">
+                                <img class="list-item__icon" src="./src/assets/icons/css-icon.svg" alt="#">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project__info-links">
+                        <a target="_blank" class="info-links__link">GitHub</a>
+                        <a target="_blank" class="info-links__link">Demo</a>
+                    </div>
+                </article>
+                <div class="project__preview">
+                    <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2F0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                        alt="#" class="preview__image">
+                </div>
+            </div>
+            <div class="project__content">
+                <article class="project__info">
+                    <h3 class="project__info-title">Lorem ipsum dolor sit amet.</h3>
+                    <p class="project__info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aperiam
+                        animi quod assumenda error vitae
+                        praesentium magnam similique et hic adipisci!</p>
+                    <div class="project__info-technologies">
+                        <ul class="project__list">
+                            <li class="project__list-item">
+                                <img class="list-item__icon" src="./src/assets/icons/html-icon.svg" alt="#">
+                            </li>
+                            <li class="project__list-item">
+                                <img class="list-item__icon" src="./src/assets/icons/css-icon.svg" alt="#">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project__info-links">
+                        <a target="_blank" class="info-links__link">GitHub</a>
+                        <a target="_blank" class="info-links__link">Demo</a>
+                    </div>
+                </article>
+                <div class="project__preview">
+                    <img src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                        alt="#" class="preview__image">
+                </div>
+            </div>
+        </main>
+        <main class="about" hidden style="display: none;">
+            <h1 class="about__title title">#About</h1>
+            <div class="about__photo">
+                <img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    alt="#" class="about__image">
+            </div>
+            <div class="about__info">
+                <h2 class="about__info-subtitle">Frontend developer based in Europe</h2>
+                <p class="about__info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                    impedit veniam optio a, sed ipsa incidunt accusamus eligendi modi nulla quisquam molestiae obcaecati
+                    labore libero exercitationem. Laboriosam tempora aperiam expedita?</p>
+                <a href="#" class="about__info-link">Download CV</a>
+            </div>
+            <h2 class="about__subtitle">Technologyes</h2>
+            <ul class="about__list list">
+                <li class="about__list-item list-item">
+                    <img class="list-item__icon" src="./src/assets/icons/html-icon.svg" alt="#">
+                </li>
+                <li class="about__list-item list-item">
+                    <img class="list-item__icon" src="./src/assets/icons/html-icon.svg" alt="#">
+                </li>
+                <li class="about__list-item list-item">
+                    <img class="list-item__icon" src="./src/assets/icons/html-icon.svg" alt="#">
+                </li>
+            </ul>
+        </main>
+        <main class="contact" hidden style="display: none;">
+            <form action="" class="contact__form">
+                <input type="text" name="name" id="" placeholder="Your name">
+                <input type="email" name="email" id="" placeholder="Email">
+                <input type="text" name="message" id="" placeholder="Enter your message">
+                <input type="submit" name="submit" id="" value="Send a message">
+            </form>
+        </main>
+        <footer class="footer">
+            <p class="footer__text">
+                Coded with
+                <span>❤️</span>
+                2022
+            </p>
+        </footer>
+    </div>
 </body>
 
 </html>
