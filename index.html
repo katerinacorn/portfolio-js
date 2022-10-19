@@ -11,37 +11,38 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
-            <nav class="navigation">
+        <header id="header" class="header">
+            <nav id="navbar" class="navigation">
                 <ul class="navigation__list list">
                     <li class="navigation__list-item list-item">
-                        <a href="/" class="list-item__link">#Home</a>
+                        <button id="nav-btn" class="list-item__link" type="button">#Home</button>
                     </li>
                     <li class="navigation__list-item list-item">
-                        <a href="/src/html/contact.html" class="list-item__link">#Projects</a>
+                        <button id="nav-btn" class="list-item__link" type="button">#Projects</button>
                     </li>
                     <li class="navigation__list-item list-item">
-                        <a href="/src/html/about.html" class="list-item__link">#About</a>
+                        <button id="nav-btn" class="list-item__link" type="button">#About</button>
                     </li>
                     <li class="navigation__list-item list-item">
-                        <a href="/src/html/contact.html" class="list-item__link">#Contact</a>
+                        <button id="nav-btn" class="list-item__link" type="button">#Contact</button>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main id="main" class="main">
-            <p class="main__subtitle">Hey There,</p>
+        <main id="home" class="main section">
+            <p class=" main__subtitle">Hey There,</p>
             <h1 class="main__title">I'm Kateryna</h1>
             <p class="main__subtitle">Frontend developer based in Europe</p>
             <ul class="main__list list">
                 <li class="main__list-item list-item">
-                    <a href="#" class="list-item__link">
-                        <img class="list-item__icon" src="./src/assets/icons/github-icon.svg" alt="#">
+                    <a href="https://github.com/katerinacorn" class="list-item__link" target="_blank"
+                        title="GitHub profile">
+                        <span class="main__list-item-icon github"></span>
                     </a>
                 </li>
                 <li class="main__list-item list-item">
-                    <a href="#" class="list-item__link">
-                        <img class="list-item__icon" src="./src/assets/icons/linkedin-icon.svg" alt="#">
+                    <a href="https://www.linkedin.com/in/katerina-kukuruzova/" class="list-item__link" target="_blank">
+                        <span class="main__list-item-icon linkedin" title="Linkedin profile"></span>
                     </a>
                 </li>
             </ul>
@@ -50,42 +51,42 @@
                 <a href="" class="list-item__link">Contact</a>
             </div>
         </main>
-        <main id="projects" class="projects" hidden>
-            <h2 class="projects__title title">#Projects</h2>
+        <main id="projects" class="projects section" hidden>
+            <h2 class=" projects__title title">#Projects</h2>
             <div class="project__content">
                 <article class="project__info">
-                    <h3 class="project__info-title">Lorem ipsum dolor sit amet.</h3>
-                    <p class="project__info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aperiam
-                        animi quod assumenda error vitae
-                        praesentium magnam similique et hic adipisci!</p>
+                    <h3 class="project__info-title">Developers salary canvas chart</h3>
+                    <p class="project__info-description">Practical work with data, array methods, canvas. Chart displays
+                        in which cities the developers live, the console displays the average salary by city.</p>
                     <div class="project__info-technologies">
                         <ul class="project__list">
                             <li class="project__list-item">
-                                <img class="list-item__icon" src="./src/assets/icons/html-icon.svg" alt="#">
+                                <img class="list-item__icon" src="./src/assets/icons/html-icon.svg" alt="html-icon">
                             </li>
                             <li class="project__list-item">
-                                <img class="list-item__icon" src="./src/assets/icons/css-icon.svg" alt="#">
+                                <img class="list-item__icon" src="./src/assets/icons/css-icon.svg" alt="css-icon">
+                            </li>
+                            <li class=" project__list-item">
+                                <img class="list-item__icon" src="./src/assets/icons/js-icon.svg" alt="js-icon">
                             </li>
                         </ul>
                     </div>
                     <div class="project__info-links">
-                        <a target="_blank" class="info-links__link">GitHub</a>
-                        <a target="_blank" class="info-links__link">Demo</a>
+                        <a href="https://github.com/katerinacorn/js-canvas-ukrainians-FE" target="_blank"
+                            class="info-links__link">GitHub</a>
+                        <a href="https://katerinacorn.github.io/js-canvas-ukrainians-FE/" target="_blank"
+                            class="info-links__link">Demo</a>
                     </div>
                 </article>
                 <div class="project__preview">
-                    <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2F0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
-                        alt="#" class="preview__image">
+                    <img src="./src/assets/images/salary-chart-preview.png" alt="salary chart preview"
+                        class="preview__image">
                 </div>
             </div>
             <div class="project__content">
                 <article class="project__info">
-                    <h3 class="project__info-title">Lorem ipsum dolor sit amet.</h3>
-                    <p class="project__info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aperiam
-                        animi quod assumenda error vitae
-                        praesentium magnam similique et hic adipisci!</p>
+                    <h3 class="project__info-title">Weather App</h3>
+                    <p class="project__info-description">Weather app used OpenWeatherAPI.</p>
                     <div class="project__info-technologies">
                         <ul class="project__list">
                             <li class="project__list-item">
@@ -94,52 +95,124 @@
                             <li class="project__list-item">
                                 <img class="list-item__icon" src="./src/assets/icons/css-icon.svg" alt="#">
                             </li>
+                            <li class=" project__list-item">
+                                <img class="list-item__icon" src="./src/assets/icons/js-icon.svg" alt="js-icon">
+                            </li>
                         </ul>
                     </div>
                     <div class="project__info-links">
-                        <a target="_blank" class="info-links__link">GitHub</a>
-                        <a target="_blank" class="info-links__link">Demo</a>
+                        <a href="https://github.com/katerinacorn/weather-api-app" target="_blank"
+                            class="info-links__link">GitHub</a>
+                        <a href="https://sunny-nougat-50f7ff.netlify.app" target="_blank"
+                            class="info-links__link">Demo</a>
                     </div>
                 </article>
                 <div class="project__preview">
-                    <img src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                        alt="#" class="preview__image">
+                    <img src="./src/assets/images/weather-app-preview.png" alt="weather app preview"
+                        class="preview__image">
                 </div>
             </div>
         </main>
-        <main class="about" hidden style="display: none;">
+        <main id="about" class="about section" hidden>
             <h1 class="about__title title">#About</h1>
-            <div class="about__photo">
-                <img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                    alt="#" class="about__image">
+            <div class="about__personal-info">
+                <div class="about__photo">
+                    <img src="./src/assets/images/memoji.png" alt="#" class="about__image">
+                </div>
+                <article class="about__info">
+                    <h2 class="about__info-subtitle">Frontend developer based in Europe</h2>
+                    <p class="about__info-description description">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Sequi
+                        impedit veniam optio a, sed ipsa incidunt accusamus eligendi modi nulla quisquam molestiae
+                        obcaecati
+                        labore libero exercitationem. Laboriosam tempora aperiam expedita?</p>
+                    <a href="./src/assets/file/CV_Kukuruzova_Kateryna.pdf" class="about__info-link" download>
+                        <span class="about__info-link-icon"></span>
+                        Download CV
+                    </a>
+                </article>
             </div>
-            <div class="about__info">
-                <h2 class="about__info-subtitle">Frontend developer based in Europe</h2>
-                <p class="about__info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                    impedit veniam optio a, sed ipsa incidunt accusamus eligendi modi nulla quisquam molestiae obcaecati
-                    labore libero exercitationem. Laboriosam tempora aperiam expedita?</p>
-                <a href="#" class="about__info-link">Download CV</a>
+            <div class="about__technologies">
+                <h2 class="about__subtitle">#Technologies</h2>
+                <ul class="about__list list">
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/html-icon.svg" alt="html icon">
+                        <span>HTML5</span>
+                    </li>
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/css-icon.svg" alt="css icon">
+                        <span>CSS3</span>
+                    </li>
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/js-icon.svg" alt="javascript icon">
+                        <span>JavaScript</span>
+                    </li>
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/node-icon.svg" alt="node.js icon">
+                        <span>Node.js</span>
+                    </li>
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/npm-icon.svg" alt="npm icon">
+                        <span>NPM</span>
+                    </li>
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/sass-icon.svg" alt="sass icon">
+                        <span>SASS</span>
+                    </li>
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/less-icon.svg" alt="less icon">
+                        <span>LESS</span>
+                    </li>
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/react-icon.svg" alt="react icon">
+                        <span>React</span>
+                    </li>
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/typescript-icon.svg" alt="typescript icon">
+                        <span>TypeScript</span>
+                    </li>
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/api-icon.svg" alt="typescript icon">
+                        <span>REST API</span>
+                    </li>
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/responsive-icon.svg"
+                            alt="responsive design icon">
+                        <span>Responsive design</span>
+                    </li>
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/grid-icon.svg" alt="grid layout icon">
+                        <span>Grid layout</span>
+                    </li>
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/flexbox-icon.svg"
+                            alt="flexbox layout icon">
+                        <span>Flexbox</span>
+                    </li>
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/bootstrap-icon.svg" alt="react icon">
+                        <span>Bootstrap</span>
+                    </li>
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/webpack-icon.svg" alt="webpak icon">
+                        <span>Webpack</span>
+                    </li>
+                    <li class="about__list-item list-item">
+                        <img class="list-item__icon" src="./src/assets/icons/github-icon.svg" alt="github icon">
+                        <span>GitHub</span>
+                    </li>
+                </ul>
             </div>
-            <h2 class="about__subtitle">Technologyes</h2>
-            <ul class="about__list list">
-                <li class="about__list-item list-item">
-                    <img class="list-item__icon" src="./src/assets/icons/html-icon.svg" alt="#">
-                </li>
-                <li class="about__list-item list-item">
-                    <img class="list-item__icon" src="./src/assets/icons/html-icon.svg" alt="#">
-                </li>
-                <li class="about__list-item list-item">
-                    <img class="list-item__icon" src="./src/assets/icons/html-icon.svg" alt="#">
-                </li>
-            </ul>
         </main>
-        <main class="contact" hidden style="display: none;">
-            <form action="" class="contact__form">
+        <main id="contact" class="contact section" hidden>
+            <h1 class="contact__title title">#Contact</h1>
+            <form action="" class=" contact__form" style="display: none;">
                 <input type="text" name="name" id="" placeholder="Your name">
                 <input type="email" name="email" id="" placeholder="Email">
                 <input type="text" name="message" id="" placeholder="Enter your message">
                 <input type="submit" name="submit" id="" value="Send a message">
             </form>
+            <a href="mailto:my@email.com" class="contact__link">my@email.com</a>
         </main>
         <footer class="footer">
             <p class="footer__text">
@@ -149,6 +222,7 @@
             </p>
         </footer>
     </div>
+    <script src="./src/js/index.js" type="module"></script>
 </body>
 
 </html>

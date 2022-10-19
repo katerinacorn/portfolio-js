@@ -13,9 +13,17 @@
     --font-large: 2.1rem;
     --font-medium: 1.5rem;
     --font-small:.8rem;
-    /* --font-xsmall:; */
-    
+    --transition: all .2s ease-out;
+    --linkedin-icon: '\f08c';
+    --react-icon: '\f41b';
+    --github-icon: '\f092';
+    --node-icon: '\f419';
+    --npm-icon: '\f3d4';
+    --bootstrap-icon: '\f836';
+    --api-icon: '\f085';
+    --flexbox-icon: '\f0db';
 
+    --download-icon: '\f019';
 }
 
 /*font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit;*/
