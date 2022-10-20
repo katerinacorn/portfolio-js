@@ -52,6 +52,8 @@ body {
 */
 .header {
     position: fixed;
+    top: 0;
+    left: 0;
     background-color: var(--bg-colour);
     width: 100%;
     /* color:aqua; */
@@ -338,7 +340,7 @@ body {
     font-weight: 400;
     line-height: 1.1;
     font-size: .8rem;
-    word-break: break-all;
+    word-break: break-word;
 }
 .about__info-link {
     font-family: 'Fira Code','Courier New', Courier, monospace;
@@ -432,6 +434,41 @@ body {
 
     scroll-margin-top: 4rem;
 }
+.contact__form{
+    /* background-color: rgb(197, 22, 22); */
+    /* flex: 1 1 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+
+    /* display: none; */
+    filter: blur(.2rem);
+}
+.contact__form-input{
+    border-radius: var(--main-border-radius);
+    padding: .9rem 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.contact__form-input_field{
+    border: 1px solid var(--primary-colour);
+}
+
+.contact__form-input_submit{
+    border: 1px solid var(--btn-colour);
+    color: var(--btn-colour);
+    text-align: center;
+    font-family: 'Fira Code','Courier New', Courier, monospace;
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
+}
+
+/* .contact__form-input_submit:hover {
+    color: var(--active-colour);
+    border-color: var(--active-colour);
+} */
 
 
 .footer {
@@ -485,8 +522,17 @@ body {
 }
 
 @media (max-width: 650px) {
-    .navigation__list {
-        gap: .5em;
+    .about, .contact, .projects {
+        margin: 0 1rem 2rem;
+    }
+
+    .about__technologies {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact__link{
+        font-size: .7rem;
     }
 
     .footer{

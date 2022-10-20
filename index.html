@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" Homepage. Kateryna is a front-end developer based in Spain. " />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/index.css">
-    <title>Portfolio</title>
+    <title>Frontend developer - Kateryna Kukuruzova</title>
 </head>
 
 <body>
@@ -32,7 +34,7 @@
         <main id="home" class="main section">
             <p class=" main__subtitle">Hey There,</p>
             <h1 class="main__title">I'm Kateryna</h1>
-            <p class="main__subtitle">Frontend developer based in Europe</p>
+            <p class="main__subtitle">Frontend developer from Ukraine, based in Europe</p>
             <ul class="main__list list">
                 <li class="main__list-item list-item">
                     <a href="https://github.com/katerinacorn" class="list-item__link" target="_blank"
@@ -86,7 +88,7 @@
             <div class="project__content">
                 <article class="project__info">
                     <h3 class="project__info-title">Weather App</h3>
-                    <p class="project__info-description">Weather app used OpenWeatherAPI.</p>
+                    <p class="project__info-description">Built using OpenWeatherAPI.</p>
                     <div class="project__info-technologies">
                         <ul class="project__list">
                             <li class="project__list-item">
@@ -121,11 +123,9 @@
                 </div>
                 <article class="about__info">
                     <h2 class="about__info-subtitle">Frontend developer based in Europe</h2>
-                    <p class="about__info-description description">Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Sequi
-                        impedit veniam optio a, sed ipsa incidunt accusamus eligendi modi nulla quisquam molestiae
-                        obcaecati
-                        labore libero exercitationem. Laboriosam tempora aperiam expedita?</p>
+                    <p class="about__info-description description">I am a self-taught web developer with freelance
+                        experience. Looking for projects/internship where I can deepen my knowledge, learn new skills
+                        and gain experience in team development.</p>
                     <a href="./src/assets/file/CV_Kukuruzova_Kateryna.pdf" class="about__info-link" download>
                         <span class="about__info-link-icon"></span>
                         Download CV
@@ -206,13 +206,18 @@
         </main>
         <main id="contact" class="contact section" hidden>
             <h1 class="contact__title title">#Contact</h1>
-            <form action="" class=" contact__form" style="display: none;">
-                <input type="text" name="name" id="" placeholder="Your name">
-                <input type="email" name="email" id="" placeholder="Email">
-                <input type="text" name="message" id="" placeholder="Enter your message">
-                <input type="submit" name="submit" id="" value="Send a message">
+            <label for="contact-form">Soon..</label>
+            <form action="" class=" contact__form" id="contact-form">
+                <input disabled class="contact__form-input contact__form-input_field" type="text" name="name" required
+                    id="" placeholder="Your name">
+                <input disabled class="contact__form-input contact__form-input_field" type="email" name="email" required
+                    id="" placeholder="Email">
+                <textarea disabled class="contact__form-input contact__form-input_field"
+                    placeholder="Enter your message" name="message" id="" cols="30" rows="10" wrap="hard"></textarea>
+                <input class="contact__form-input contact__form-input_submit" type="submit" name="submit" id=""
+                    value="Send a message" disabled>
             </form>
-            <a href="mailto:my@email.com" class="contact__link">my@email.com</a>
+            <a href="mailto:my@email.com" class="contact__link">kukuruzova.ekaterina@gmail.com</a>
         </main>
         <footer class="footer">
             <p class="footer__text">
